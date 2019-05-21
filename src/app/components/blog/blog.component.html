@@ -1,0 +1,51 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h5 class="display-4">Personal Blog</h5>
+    <p class="lead">A concised version of my journey exploring the vast world of information out there.
+      Including all the obstacles, frustrations as well as the joys.
+    </p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col md-9">
+        <app-blog-post *ngFor="let blog of blogs" [blog]="blog"></app-blog-post>
+    </div>
+
+    <div class="col-md-3">
+    
+      <div class="card">
+        <p class="text-center">Recent Posts</p>
+        <ul>
+            <li>
+                links
+            </li>
+            <li>
+                links
+            </li>
+        </ul>
+
+        <br>
+        <hr>
+        <br>
+
+        <p class="text-center">Topics</p>
+        <ul>
+            <li>
+                links
+            </li>
+            <li>
+                links
+            </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<br>
+<br>

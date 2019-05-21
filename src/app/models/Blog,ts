@@ -1,0 +1,8 @@
+export interface Blog{
+    $key?:string;
+    title:string;
+    desc?:string;
+    body:string;
+    date?:string;
+    meta?:string;
+}
