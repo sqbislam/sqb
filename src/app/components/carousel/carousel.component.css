@@ -1,12 +1,5 @@
-span.icons{
-    font-size: 32px; 
-    color: white;
-    margin-right: 20px;
-}
-span.icons:hover{
-    color:black;
-}
 
 h2{
-    text-shadow: 2px 1px grey;
+    text-shadow: 2px 1px black;
+
 }

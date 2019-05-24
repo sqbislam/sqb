@@ -1,0 +1,15 @@
+span.icons{
+    font-size: 32px; 
+    margin-right: 20px;
+}
+a{
+    color: white;
+}
+
+a:hover{
+    color: black;
+}
+
+h2{
+    text-shadow: 2px 1px black;
+}

@@ -1,0 +1,22 @@
+
+
+<div class="container">
+  <br>
+  <a routerLink="/blog">
+    <span style="font-size:38px;"><i class="fa fa-arrow-circle-left"></i></span>
+  </a>
+  <br>
+  <br>
+
+  <h3 class="display-5">{{blog?.title}}</h3>
+
+  <h6>{{blog?.desc}}</h6>
+  
+  <small>{{blog?.date.toDate() | date:'medium'}}</small>
+</div>
+
+<hr>
+
+<div class="container">
+  <div [innerHtml]="blog?.body" ></div>
+</div>

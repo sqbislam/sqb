@@ -11,4 +11,8 @@ getBlogs(){
   return this.firestore.collection('blogs').snapshotChanges();
 
 }
+
+getSingleBlog(id){
+  return this.firestore.collection('blogs').doc(id).snapshotChanges();
+}
 }

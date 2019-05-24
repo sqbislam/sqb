@@ -7,7 +7,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="p-5">
   <div class="row">
     <div class="col md-9">
         <app-blog-post *ngFor="let blog of blogs" [blog]="blog"></app-blog-post>
@@ -16,13 +16,11 @@
     <div class="col-md-3">
     
       <div class="card">
-        <p class="text-center">Recent Posts</p>
+        <p class="text-center p-3">Recent Posts</p>
         <ul>
-            <li>
-                links
-            </li>
-            <li>
-                links
+
+            <li *ngFor="let blog of blogs">
+                <a href="#" [routerLink]="['/blog/'+blog.id]"  class="text-info">{{blog.title}}</a>
             </li>
         </ul>
 
@@ -30,7 +28,7 @@
         <hr>
         <br>
 
-        <p class="text-center">Topics</p>
+        <p class="text-center p-3">Topics</p>
         <ul>
             <li>
                 links

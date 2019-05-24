@@ -18,6 +18,10 @@ import { BlogComponent } from './components/blog/blog.component';
 import { BlogPostComponent } from './components/blog-post/blog-post.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { AddBlogComponent } from './components/add-blog/add-blog.component';
+import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
+import { HomeDetailsComponent } from './components/home-details/home-details.component';
+import { ProjectPostComponent } from './components/project-post/project-post.component';
+import { TestComponent } from './components/test/test.component';
 
 
 
@@ -37,6 +41,10 @@ const appRoutes: Routes = [
   {
     path:"add-blog",
     component:AddBlogComponent
+  },
+  {
+    path: "blog/:id",
+    component: BlogDetailsComponent
   }
 ];
 
@@ -49,7 +57,11 @@ const appRoutes: Routes = [
     BlogComponent,
     BlogPostComponent,
     ProjectsComponent,
-    AddBlogComponent
+    AddBlogComponent,
+    BlogDetailsComponent,
+    HomeDetailsComponent,
+    ProjectPostComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

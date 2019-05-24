@@ -1,0 +1,82 @@
+
+
+
+<div class="container">
+  <br>
+  <a routerLink="/blog">
+    <span style="font-size:38px;"><i class="fa fa-arrow-circle-left"></i></span>
+  </a>
+  <br>
+  <br>
+
+  <h3 class="display-5">Intro to Computer Vision (Part 1)</h3>
+
+  <h6>Basics of Computer Vision and the Deep Learning fundamentals behind it.</h6>
+  
+  <small>{{date | date:'medium'}}</small>
+</div>
+
+<hr>
+
+<div class="container">
+  <div>
+    
+
+    <p class="lead">
+      Computer Vision deals with the idea of computers being able to visually see the real world and interpret information about it just like we humans do.
+      In simple terms, it gives eyes to the computer system. 
+      This, if you think about it is not an easy task. For instance, us as human beings have been visualising the world from when we were born, and hence we have an inherent understanding of it.
+      But Computers for instance, cannot see images but a matrix of integer values, of each individual pixel. Each pixel value may range from 0-255 and have three channels for  color (RGB).
+      This is called the semantic gap. We have given the image a semantic meaning based on its appearance
+      which the computer is not capable of grasping.
+      
+      Here is a visulaisation.
+      <br>
+      
+      <img src="https://i.ibb.co/myZn0t7/cat-matrix.png" class="d-block mx-auto">
+
+      <br>
+
+      So it is a challenge to make computers percieve the world, and interpret it using just these numbers.
+      Even if you want to hard code an alogrithm which figures out the different edges or corners to identify the
+      the picture of a cat. It will work for this picture only. But if you give it a new picure of a cat, it will 
+      fail to identify it since even the slightest variation of the image, changes all the pixel values.
+      We need to make a model that generalizes, and is robust enough to identify any image of a cat, from any angle
+      and orientation.
+
+      How do we do this?
+      <br>
+      <br>
+      This is where Deep Learning or Neural Nets comes in. A network of layers of computation to create a model that 
+      is remarkably able to achieve the desired outcome.
+      The terminology may seem overwhelming at first, I myself was always scared of the term 'Deep Learning or Neural networks' 
+      but the fundamentals are pretty simple and intriguing to say the least.
+      I would like to give an overview of what I have leart so far. 
+      
+      <br>
+      <br>
+
+      A top-view of the the process may be depicted as follows:
+      <br>
+      <img src="https://i.ibb.co/mCt5W2s/overview-code.png" class="mx-auto d-block">
+      <br>
+      <br>
+      This is a Data-Driven approach, where
+    </p> 
+    <ul class="lead">
+        <li>Images are collected</li>
+        <li>ML model/classifier is trained using correctly labeled images</li>
+        <li>'Trained' model is used to classify any image from the real world domain</li>
+    </ul>
+
+    <p class="lead">
+      The Machine learning logic to create a classifier is the challenge now. In the following posts 
+      I will be discussing different algorithms used to make them and the intuition behind them.    
+    </p>
+
+
+  </div>
+</div>
+
+
+
