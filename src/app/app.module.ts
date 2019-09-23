@@ -22,6 +22,7 @@ import { BlogDetailsComponent } from './components/blog-details/blog-details.com
 import { HomeDetailsComponent } from './components/home-details/home-details.component';
 import { ProjectPostComponent } from './components/project-post/project-post.component';
 import { TestComponent } from './components/test/test.component';
+import { ProjectDetailsComponent } from './components/project-details/project-details.component';
 
 
 
@@ -45,6 +46,10 @@ const appRoutes: Routes = [
   {
     path: "blog/:id",
     component: BlogDetailsComponent
+  },
+  {
+    path:"project-details/:id",
+    component: ProjectDetailsComponent
   }
 ];
 
@@ -61,7 +66,8 @@ const appRoutes: Routes = [
     BlogDetailsComponent,
     HomeDetailsComponent,
     ProjectPostComponent,
-    TestComponent
+    TestComponent,
+    ProjectDetailsComponent
   ],
   imports: [
     BrowserModule,
